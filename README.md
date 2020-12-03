@@ -2,6 +2,8 @@
 
 IVS E-commerce Demo with a Product Carousel and a Simple Chat - https://master.d1ddui0zybgma1.amplifyapp.com/
 
+
+
 **This project is intended for education purposes only**
 
 This is a serverless web application leveraging [Amazon IVS](https://aws.amazon.com/ivs/), [AWS Amplify](https://aws.amazon.com/amplify/), and [React](https://reactjs.org/). The web user interface is a [single page application](https://en.wikipedia.org/wiki/Single-page_application) built using [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design) frameworks and techniques, producing a native app-like experience tailored to the user's device.
@@ -14,8 +16,10 @@ This demo showcases how you can implement a product carousel and a simple chat n
 2. You can also demo this app by navigating to the AWS Amplify App where this app has been deployed [URL](https://master.d1ddui0zybgma1.amplifyapp.com/)
 
 
-## Known issues and limitations
-* The application was written for demonstration purposes and the chat does not support multiple users
+## Future work
+* The application was written for demo purposes and the chat does not support multiple users
+* Carousel is accessible but needs more testing
+* App needs more unit tests
 * Currently only tested in the us-east-1 region
 
 ## About Amazon IVS
