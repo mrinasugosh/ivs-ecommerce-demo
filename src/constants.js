@@ -44,4 +44,6 @@ export const PRODUCTS = [
         link: 'https://www.amazon.com/Sapiens-Homo-Deus-box-set/dp/0062834312/',
         image: 'https://d2h1pu99sxkfvn.cloudfront.net/b0/11381155/439473868_nBCa984VtM/P0.jpg'
     },
-]
+];
+
+export const PLAYBACK_URL="https://86b54afdc65c.us-east-1.playback.live-video.net/api/video/v1/us-east-1.623041181200.channel.ZiBj0oglnYPj.m3u8";

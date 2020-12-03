@@ -1,27 +1,16 @@
 import React, { Component } from "react";
+import "../styles/Chat.css";
 
 import ChatMessage from './ChatMessage';
 
 
 class ChatMessageHistory extends Component {
     render() {      
-       var createMessage = function(message, index) {
-          var liStyles = {
-             backgroundColor: ( index % 2 == 1 ) ? '#ddd' : '#efefef',
-             padding: '1rem',
-             borderBottom: '1px solid #ddd'
-          };
-          
-          return <li style={liStyles}><ChatMessage message={message.message} timestamp={message.timestamp} /></li>
-       };
-          
-       var ulStyles = {
-          listStyle: 'none',
-          margin: 0,
-          padding: 0
+       var createMessage = (message, index) => {
+          return <li class="chat-message" style={{ backgroundColor: ( index % 2 == 1 ) ? '#ddd' : '#efefef' }}><ChatMessage message={message.message} timestamp={message.timestamp} /></li>
        };
        
-       return <ul style={ulStyles}>{this.props.messages.map(createMessage)}</ul>;
+       return <ul class="chat-history-list">{this.props.messages.map(createMessage)}</ul>;
     }
  };   
 

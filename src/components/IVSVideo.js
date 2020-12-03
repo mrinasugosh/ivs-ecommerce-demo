@@ -1,4 +1,5 @@
 import React, {useEffect, useRef} from 'react';
+import { PLAYBACK_URL } from '../constants';
 
 
 function IVSVideo(options) {
@@ -20,7 +21,7 @@ function IVSVideo(options) {
                     // eslint-disable-next-line no-undef
                     const player = IVSPlayer.create();
                     player.attachHTMLVideoElement(document.getElementById('video-player'));
-                    player.load("https://86b54afdc65c.us-east-1.playback.live-video.net/api/video/v1/us-east-1.623041181200.channel.ZiBj0oglnYPj.m3u8");
+                    player.load(PLAYBACK_URL);
                     player.play();
                 }
             }
